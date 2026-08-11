@@ -340,7 +340,7 @@ const ExploringStrip = () => (
           style={{ background: '#211F1B', border: '1px solid #34312B' }}
           onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(196,122,74,0.35)'; e.currentTarget.style.transform = 'translateY(-4px)'; }}
           onMouseLeave={e => { e.currentTarget.style.borderColor = '#34312B'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-          <span className="text-2xl mb-3 block transition-transform duration-300 group-hover:scale-110">{item.icon}</span>
+          <span className="text-2xl mb-3 block transition-transform duration-300 group-hover:scale-110"></span>
           <p className="font-bold text-sm mb-2" style={{ color: '#F1EEE7' }}>{item.title}</p>
           <p className="text-xs leading-relaxed" style={{ color: '#716D65' }}>{item.desc}</p>
         </motion.div>

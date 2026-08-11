@@ -40,7 +40,7 @@ import netflixCloneImg from '../assets/Netflix-clone.png';
 // ─── Personal Info ────────────────────────────────────────────────────────────
 export const personalInfo = {
   name: 'Surafel Melliyon',
-  title: 'Junior Full-Stack Developer',
+  title: 'MERN Full-Stack Developer',
   location: 'Addis Ababa, Ethiopia',
   tagline: 'I build practical web applications, automation systems, and digital experiences that solve real-world problems.',
   email: 'surafelmelliyon111@gmail.com',
@@ -358,7 +358,7 @@ export const exploring = [
   {
     title: 'Automation',
     description: 'Building automated workflows using APIs, Telegram bots, and backend services. Automation is how you do more with less.',
-    // icon: '🤖',
+    // icon: '',
     color: 'from-indigo-500 to-blue-600',
     tags: ['Telegram Bots', 'API Workflows', 'Backend Automation'],
   },

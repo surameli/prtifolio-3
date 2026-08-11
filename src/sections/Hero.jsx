@@ -57,7 +57,7 @@ const Hero = () => (
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }} className="mt-4 mb-6">
             <span className="text-xl md:text-2xl font-semibold" style={{ color: '#A8A39A' }}>
-              Junior Full-Stack Developer
+              MERN Full-Stack Developer
             </span>
             <span className="font-bold text-2xl md:text-3xl" style={{ color: '#C47A4A' }}> .</span>
           </motion.div>

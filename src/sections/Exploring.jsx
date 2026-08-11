@@ -22,7 +22,7 @@ const Exploring = () => (
             onMouseLeave={e => { e.currentTarget.style.borderColor = '#34312B'; e.currentTarget.style.transform = 'translateY(0)'; }}>
 
             <div className="text-4xl mb-4 transition-transform duration-300 group-hover:scale-110">
-              {item.icon}
+              {/* {item.icon} */}
             </div>
             <h3 className="text-lg font-bold mb-3" style={{ color: '#F1EEE7' }}>{item.title}</h3>
             <p className="text-sm leading-relaxed mb-5" style={{ color: '#A8A39A' }}>{item.description}</p>
