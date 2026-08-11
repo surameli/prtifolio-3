@@ -33,7 +33,7 @@ import {
 // ─── Project Images ───────────────────────────────────────────────────────────
 import aiRecruitmentImg from '../assets/AI-rectuement-system.png';
 import carRentalImg from '../assets/car-rental.png';
-import portfolioImg from '../assets/portfolio.png';
+import portfolioImg from '../assets/recent-portiflio.png';
 import amazonCloneImg from '../assets/Amazon-clone.png';
 import netflixCloneImg from '../assets/Netflix-clone.png';
 
