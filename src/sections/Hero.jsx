@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="absolute inset-0 pointer-events-none">
 
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-700px h-500px rounded-full"
           style={{
             background:
               'radial-gradient(circle, rgba(196,122,74,0.10), rgba(196,122,74,0.03) 45%, transparent 70%)',
@@ -43,7 +43,7 @@ const Hero = () => {
         />
 
         <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px]"
+          className="absolute top-0 left-1/2 -translate-x-1/2 w-600px h-300px"
           style={{
             background:
               'radial-gradient(circle, rgba(196,122,74,0.05), transparent 70%)',
@@ -209,7 +209,7 @@ const Hero = () => {
             </div>
 
             <div
-              className="mt-3 h-[2px] w-12 rounded-full"
+              className="mt-3 h-2px w-12 rounded-full"
               style={{
                 background:
                   'linear-gradient(90deg, transparent, #C47A4A, transparent)',
