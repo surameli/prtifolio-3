@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="absolute inset-0 pointer-events-none">
 
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-700px h-500px rounded-full"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full"
           style={{
             background:
               'radial-gradient(circle, rgba(196,122,74,0.10), rgba(196,122,74,0.03) 45%, transparent 70%)',
@@ -43,7 +43,7 @@ const Hero = () => {
         />
 
         <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-600px h-300px"
+          className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px]"
           style={{
             background:
               'radial-gradient(circle, rgba(196,122,74,0.05), transparent 70%)',
@@ -70,38 +70,38 @@ const Hero = () => {
 
           {/* Available */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm mb-8"
-            style={{
-              background: 'rgba(25,24,22,0.75)',
-              border: '1px solid #34312B',
-              color: '#A8A39A',
-              boxShadow:
-                '0 10px 35px rgba(0,0,0,0.25)',
-            }}
+            // initial={{ opacity: 0, y: 20 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 0.6 }}
+            // className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm mb-8"
+            // style={{
+            //   background: 'rgba(25,24,22,0.75)',
+            //   border: '1px solid #34312B',
+            //   color: '#A8A39A',
+            //   boxShadow:
+            //     '0 10px 35px rgba(0,0,0,0.25)',
+            // }}
           >
-            <span
+            {/* <span
               className="w-2 h-2 rounded-full animate-pulse"
               style={{
                 background: '#6F8F72',
                 boxShadow: '0 0 10px rgba(111,143,114,0.6)',
               }}
-            />
+            /> */}
 
-            Available for opportunities
-
+            {/* Available for opportunities */}
+{/* 
             <span style={{ color: '#34312B' }}>
               ·
-            </span>
+            </span> */}
 
-            <MapPin
+            {/* <MapPin
               size={12}
               style={{ color: '#C47A4A' }}
-            />
+            /> */}
 
-            {personalInfo.location}
+            {/* {personalInfo.location} */}
           </motion.div>
 
 
@@ -209,7 +209,7 @@ const Hero = () => {
             </div>
 
             <div
-              className="mt-3 h-2px w-12 rounded-full"
+              className="mt-3 h-[2px] w-12 rounded-full"
               style={{
                 background:
                   'linear-gradient(90deg, transparent, #C47A4A, transparent)',
