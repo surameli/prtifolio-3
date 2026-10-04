@@ -36,7 +36,7 @@ import carRentalImg from '../assets/car-rental.png';
 import portfolioImg from '../assets/recent-portiflio.png';
 import amazonCloneImg from '../assets/Amazon-clone.png';
 import netflixCloneImg from '../assets/Netflix-clone.png';
-
+import freshCornerImg from '../assets/fresh-delivery.png'
 // ─── Personal Info ────────────────────────────────────────────────────────────
 export const personalInfo = {
   name: 'Surafel Melliyon',
@@ -170,6 +170,34 @@ export const projects = [
     icon: '🎬',
     imageUrl: netflixCloneImg,
   },
+  {
+  id: 6,
+  title: 'Fresh Corner Delivery',
+  subtitle: 'Full-Stack Food & Grocery Delivery Platform',
+  description:
+    'A full-stack delivery platform that allows customers to browse products, place orders, make online payments, and track deliveries.',
+  longDescription:
+    'A full-stack food and grocery delivery platform built for a complete online ordering experience. The system includes customer authentication, product browsing, shopping cart, address management, order processing, delivery partner management, delivery tracking, and Chapa payment integration. The backend is built with Node.js, Express, Prisma, and PostgreSQL, while the frontend provides a responsive React and Tailwind CSS experience.',
+  tech: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Prisma', 'PostgreSQL', 'Chapa'],
+  features: [
+    'Customer authentication',
+    'Product browsing and search',
+    'Shopping cart and checkout',
+    'Chapa online payment',
+    'Payment verification',
+    'Order management and tracking',
+    'Delivery partner management',
+    'Delivery location updates',
+    'Address management',
+    'Admin order management',
+  ],
+  github: 'https://github.com/surameli/fresh-corner-delivery',
+  demo: 'https://fresh-corner-delivery.vercel.app/',
+  featured: true,
+  color: 'from-green-500 to-emerald-600',
+  icon: '🛵',
+  imageUrl: freshCornerImg,
+},
 ];
 
 // ─── Tech Stack ───────────────────────────────────────────────────────────────
