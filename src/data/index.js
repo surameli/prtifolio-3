@@ -171,7 +171,7 @@ export const projects = [
     imageUrl: netflixCloneImg,
   },
   {
-  id: 6,
+  id: 1,
   title: 'Fresh Corner Delivery',
   subtitle: 'Full-Stack Food & Grocery Delivery Platform',
   description:
