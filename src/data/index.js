@@ -77,7 +77,7 @@ export const projects = [
     imageUrl: aiRecruitmentImg,
   },
   {
-    id: 2,
+    id: 3,
     title: 'Car Rental System',
     subtitle: 'Full-Stack Booking Platform',
     description:
