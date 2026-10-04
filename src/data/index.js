@@ -100,7 +100,7 @@ export const projects = [
     imageUrl: carRentalImg,
   },
   {
-    id: 3,
+    id: 4,
     title: 'Portfolio Website',
     subtitle: 'Personal Developer Portfolio',
     description:
@@ -123,7 +123,7 @@ export const projects = [
     imageUrl: portfolioImg,
   },
   {
-    id: 4,
+    id: 5,
     title: 'Amazon Clone',
     subtitle: 'E-Commerce Platform',
     description:
@@ -147,7 +147,7 @@ export const projects = [
     imageUrl: amazonCloneImg,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Netflix Clone',
     subtitle: 'Movie Streaming Interface',
     description:
