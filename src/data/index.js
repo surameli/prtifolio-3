@@ -53,7 +53,7 @@ export const personalInfo = {
 // ─── Projects ─────────────────────────────────────────────────────────────────
 export const projects = [
   {
-    id: 1,
+    id: 2,
     title: 'AI Recruitment System',
     subtitle: 'AI-Powered Hiring Platform',
     description:
