@@ -58,8 +58,8 @@ const Navbar = () => {
               <div
                 className="w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm transition-all duration-300"
                 style={{
-                  background: '#FF3D8B',
-                  color: '#FFFFFF',
+                  background: '#FFFFFF',
+                  color: '#000',
                 }}
               >
                 S
@@ -69,7 +69,7 @@ const Navbar = () => {
                 className="font-bold text-sm tracking-wide hidden sm:block"
                 style={{ color: '#FFFFFF' }}
               >
-                Surafel<span style={{ color: '#FF3D8B' }}>.</span>
+                Surafel<span style={{ color: '#FFFFF' }}>.</span>
               </span>
             </button>
 
