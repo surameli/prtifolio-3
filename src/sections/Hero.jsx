@@ -27,7 +27,7 @@ const Hero = () => {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 pt-20"
       style={{
-        background: '#11100E',
+        background: 'var(--bg)',
       }}
     >
       {/* Background Glow */}

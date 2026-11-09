@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import { stats } from '../data';
 
 const Stats = () => (
-  <section className="py-16 relative overflow-hidden" style={{ background: '#151412' }}>
-    <div className="absolute inset-0" style={{ borderTop: '1px solid #34312B', borderBottom: '1px solid #34312B' }} />
+  <section className="py-16 relative overflow-hidden" style={{ background: '#11100E' }}>
+    <div className="absolute inset-0"  />
     <div className="container-custom relative">
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat, i) => (
