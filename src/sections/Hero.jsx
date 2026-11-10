@@ -223,7 +223,7 @@ const Hero = () => {
               className="px-8 py-3.5 rounded-xl font-medium text-sm transition-all duration-300"
               style={{ color: '#1D4A35' }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.color = '#FF3D8B';
+                e.currentTarget.style.color = '#F2462E';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.color = '#1D4A35';
