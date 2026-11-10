@@ -39,7 +39,7 @@ const GitHubSection = () => (
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1D4A35' }}>
+          <h2 className="text-3xl md:text-4xl  mb-4 font-black" style={{ color: '#1D4A35' }}>
             Building in Public
           </h2>
           <p className="text-base md:text-lg max-w-xl mx-auto mb-8 leading-relaxed" style={{ color: 'rgba(29,74,53,0.76)' }}>

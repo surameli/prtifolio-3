@@ -65,9 +65,10 @@ const Contact = () => {
       <div className="container-custom relative">
         <SectionHeader
           eyebrow="Contact"
-          title="Let's build something useful."
+          title={<>Let's build something <span style={{ color: '#F2462E' }}>useful.</span></>}
           subtitle="Have an idea, project, or opportunity? I'd love to hear from you."
           tone="light"
+          titleClassName="text-5xl font-black"
         />
 
         <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 max-w-5xl mx-auto">

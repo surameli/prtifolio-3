@@ -7,9 +7,10 @@ const Exploring = () => (
     <div className="container-custom relative">
       <SectionHeader
         eyebrow="Currently Exploring"
-        title="Beyond the usual stack"
+        title={<>Beyond the usual <span style={{ color: '#F2462E' }}>stack</span></>}
         subtitle="Development doesn't stop at what I already know. Here's where I'm pushing into new territory."
         tone="light"
+        titleClassName="text-5xl font-black"
       />
 
       <div className="grid md:grid-cols-3 gap-5">

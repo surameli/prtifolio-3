@@ -7,9 +7,10 @@ const Process = () => (
     <div className="container-custom">
       <SectionHeader
         eyebrow="How I Build"
-        title="My development process"
+        title={<>My development <span style={{ color: '#F2462E' }}>process</span></>}
         subtitle="Good software isn't an accident. Here's how I approach every project."
         tone="light"
+        titleClassName="text-5xl font-black"
       />
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
