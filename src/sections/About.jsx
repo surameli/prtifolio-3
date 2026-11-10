@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Code2, Cpu, Layers, Calendar } from 'lucide-react';
+import { MapPin, Code2, Cpu, Layers, Calendar, GraduationCap } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import SectionHeader from '../components/SectionHeader';
 import { personalInfo, education } from '../data';
@@ -36,29 +36,7 @@ const About = () => (
             <p>When I'm not building, I'm learning the next thing that'll make me better at it.</p>
           </div>
 
-          <div className="mt-8">
-            <h4 className="text-sm font-semibold uppercase tracking-widest mb-4" style={{ color: '#1D4A35' }}>
-              What I build
-            </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {highlights.map((h, i) => (
-                <motion.div key={h.label}
-                  initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                  className="flex items-start gap-3 p-3 rounded-xl transition-all duration-300"
-                  style={{ background: '#F8F3E9', border: '1px solid rgba(29,74,53,0.14)' }}>
-                  <div className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
-                    style={{ background: 'rgba(242,70,46,0.10)', border: '1px solid rgba(242,70,46,0.25)', color: '#F2462E' }}>
-                    {h.icon}
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium" style={{ color: '#1D4A35' }}>{h.label}</p>
-                    <p className="text-xs mt-0.5" style={{ color: 'rgba(29,74,53,0.72)' }}>{h.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
+         
         </AnimatedSection>
 
         {/* RIGHT */}
@@ -106,40 +84,81 @@ const About = () => (
             </div>
           </div>
 
-          {/* Education */}
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-base">🎓</span>
-              <h4 className="text-sm font-semibold uppercase tracking-widest" style={{ color: '#1D4A35' }}>Education</h4>
-              <div className="flex-1 h-px ml-1" style={{ background: 'rgba(29,74,53,0.2)' }} />
-            </div>
-            <div className="space-y-3">
-              {education.map((edu, i) => (
-                <motion.div key={`${edu.institution}-${i}`}
-                  initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.1 }}
-                  className="rounded-xl p-4 transition-all duration-300 group"
-                  style={{ background: '#F8F3E9', border: '1px solid rgba(29,74,53,0.14)' }}
-                  onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(242,70,46,0.45)'}
-                  onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(29,74,53,0.14)'}>
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-                      style={{ background: 'rgba(242,70,46,0.10)', border: '1px solid rgba(242,70,46,0.25)' }}>
-                      {edu.icon}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h5 className="font-semibold text-sm leading-snug" style={{ color: '#1D4A35' }}>{edu.degree}</h5>
-                      <p className="text-xs mt-0.5" style={{ color: '#F2462E' }}>{edu.institution}</p>
-                    </div>
-                    <div className="flex items-center gap-1 text-xs shrink-0" style={{ color: 'rgba(29,74,53,0.72)' }}>
-                      <Calendar size={10} />{edu.period}
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
         </AnimatedSection>
+      </div>
+
+      {/* Education */}
+      <div
+        className="mt-12 rounded-2xl p-5 sm:p-7"
+        style={{
+          background: 'rgba(29,74,53,0.06)',
+          border: '1px solid rgba(29,74,53,0.12)',
+        }}
+      >
+        <div className="mb-5 flex items-center gap-3">
+          <div
+            className="flex h-10 w-10 items-center justify-center rounded-xl"
+            style={{ color: '#FFFFFF', background: '#1D4A35' }}
+          >
+            <GraduationCap size={20} />
+          </div>
+          <div>
+            <p
+              className="text-xs font-bold uppercase tracking-[0.16em]"
+              style={{ color: '#F2462E' }}
+            >
+              Education
+            </p>
+            <h3 className="text-lg font-bold" style={{ color: '#1D4A35' }}>
+              Where I started building
+            </h3>
+          </div>
+        </div>
+
+        <div className="grid gap-3 md:grid-cols-2">
+          {education.map((edu, index) => (
+            <motion.div
+              key={`${edu.institution}-${index}`}
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
+              className="flex flex-wrap items-center gap-4 rounded-xl p-4 sm:flex-nowrap"
+              style={{
+                background: '#F8F3E9',
+                border: '1px solid rgba(29,74,53,0.1)',
+              }}
+            >
+              <div
+                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-xl"
+                style={{ background: 'rgba(242,70,46,0.1)' }}
+              >
+                {edu.icon || <GraduationCap size={20} color="#F2462E" />}
+              </div>
+              <div className="min-w-0 flex-1">
+                <h4
+                  className="text-sm font-bold leading-snug"
+                  style={{ color: '#1D4A35' }}
+                >
+                  {edu.degree}
+                </h4>
+                <p
+                  className="mt-1 text-xs font-medium"
+                  style={{ color: '#F2462E' }}
+                >
+                  {edu.institution}
+                </p>
+              </div>
+              <div
+                className="ml-[3.75rem] flex shrink-0 items-center gap-1 text-xs sm:ml-0"
+                style={{ color: 'rgba(29,74,53,0.68)' }}
+              >
+                <Calendar size={13} />
+                {edu.period}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   </section>
