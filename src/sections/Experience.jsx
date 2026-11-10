@@ -405,7 +405,7 @@ const Experience = () => {
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-4xl lg:text-5xl font-black mb-4 leading-tight font-black"
+          <h2 className="text-4xl md:text-4xl lg:text-5xl font-black mb-4 leading-tight "
             style={{ color: '#1D4A35' }}>
             Where I've Been  
             <span style={{ color: '#F2462E' }}>  Building.</span>

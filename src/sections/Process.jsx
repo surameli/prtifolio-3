@@ -27,12 +27,12 @@ const Process = () => (
               onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(29,74,53,0.14)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
 
               <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center justify-center w-11 h-11 rounded-xl transition-all duration-300"
+                {/* <div className="flex items-center justify-center w-11 h-11 rounded-xl transition-all duration-300"
                   style={{ background: 'rgba(242,70,46,0.1)', border: '1px solid rgba(242,70,46,0.2)', color: '#F2462E' }}>
                   {typeof Icon === 'string'
-                    ? <span style={{ fontSize: '20px' }}>{Icon}</span>
+                    ? <span style={{ fontSize: '20px' }}>{}</span>
                     : <Icon size={22} />}
-                </div>
+                </div> */}
                 <span className="text-xs font-black font-mono" style={{ color: '#F2462E' }}>{step.number}</span>
               </div>
 
