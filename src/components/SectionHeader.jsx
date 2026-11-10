@@ -1,6 +1,6 @@
 import AnimatedSection from './AnimatedSection';
 
-const SectionHeader = ({ eyebrow, title, subtitle, className = '', tone = 'dark' }) => (
+const SectionHeader = ({ eyebrow, title, subtitle, className = '', titleClassName, tone = 'dark' }) => (
   <div className={`text-center mb-16 ${className}`}>
     <AnimatedSection>
       {eyebrow && (
@@ -13,7 +13,7 @@ const SectionHeader = ({ eyebrow, title, subtitle, className = '', tone = 'dark'
           {eyebrow}
         </span>
       )}
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight"
+      <h2 className={`${titleClassName || 'text-3xl md:text-4xl lg:text-5xl font-bold'} mb-4 leading-tight`}
         style={{ color: tone === 'light' ? '#1D4A35' : '#F1EEE7' }}>
         {title}
       </h2>

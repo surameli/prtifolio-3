@@ -68,10 +68,9 @@ const Projects = () => {
 
   return (
     <section id="projects" className="section-padding relative" style={{ background: '#EEE5D4' }}>
-      <div className="container-custom relative">
-        <SectionHeader eyebrow="Featured Projects" title="Things I've built"
-          subtitle="Real projects built with real purpose — not tutorials, not demos."
-          tone="light" />
+      <div className="container-custom relative ">
+        <SectionHeader eyebrow="Featured Projects" title={<>Things I have <span style={{ color: '#F2462E' }}>built</span></>} subtitle="Real projects built with real purpose — not tutorials, not demos." tone="light" titleClassName="text-5xl font-black" />
+          
 
         <div className="grid lg:grid-cols-3 gap-8 items-start">
           {/* List */}

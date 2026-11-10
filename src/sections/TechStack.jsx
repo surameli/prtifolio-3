@@ -215,9 +215,10 @@ const TechStack = () => {
 
         <SectionHeader
           eyebrow="Tech Stack"
-          title="What I work with"
+          title={<>What I <span style={{ color: '#F2462E' }}>work</span> with</>}
           subtitle="Technologies I use to turn ideas into working software."
           tone="light"
+          titleClassName="text-5xl font-black"
         />
 
         <div className="space-y-10">
