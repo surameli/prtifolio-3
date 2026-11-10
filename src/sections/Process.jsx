@@ -3,7 +3,11 @@ import SectionHeader from '../components/SectionHeader';
 import { processSteps } from '../data';
 
 const Process = () => (
-  <section id="process" className="section-padding" style={{ background: '#EEE5D4' }}>
+  <section id="process" className="section-padding relative" style={{ background: '#EEE5D4' }}>
+    <div
+      className="absolute top-0 left-1/2 h-24 w-px -translate-x-1/2"
+      style={{ background: 'linear-gradient(to bottom, transparent, rgba(242,70,46,0.35))' }}
+    />
     <div className="container-custom">
       <SectionHeader
         eyebrow="How I Build"

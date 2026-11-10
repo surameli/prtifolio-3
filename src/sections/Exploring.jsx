@@ -4,6 +4,10 @@ import { exploring } from '../data';
 
 const Exploring = () => (
   <section id="exploring" className="section-padding relative" style={{ background: '#EEE5D4' }}>
+    <div
+      className="absolute top-0 left-1/2 h-24 w-px -translate-x-1/2"
+      style={{ background: 'linear-gradient(to bottom, transparent, rgba(242,70,46,0.35))' }}
+    />
     <div className="container-custom relative">
       <SectionHeader
         eyebrow="Currently Exploring"
