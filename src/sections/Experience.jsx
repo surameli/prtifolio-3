@@ -325,13 +325,13 @@ const exploringItems = [
 const ExploringStrip = () => (
   <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }} transition={{ duration: 0.6 }} className="mt-16">
-    <div className="mb-8">
+    {/* <div className="mb-8">
       <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#F2462E' }}>
         Currently Exploring
       </p>
       <h3 className="text-xl font-bold" style={{ color: '#1D4A35' }}>The next part of the journey.</h3>
-    </div>
-    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    </div> */}
+    {/* <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {exploringItems.map((item, i) => (
         <motion.div key={item.title}
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -345,7 +345,7 @@ const ExploringStrip = () => (
           <p className="text-xs leading-relaxed" style={{ color: 'rgba(29,74,53,0.72)' }}>{item.desc}</p>
         </motion.div>
       ))}
-    </div>
+    </div> */}
   </motion.div>
 );
 
@@ -394,28 +394,28 @@ const Experience = () => {
 
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }} transition={{ duration: 0.7 }} className="mb-14">
+          viewport={{ once: true }} transition={{ duration: 0.7 }} className="mb-14 text-center">
 
-          <div className="flex items-center gap-3 mb-5">
+          <div className="mb-5 flex items-center justify-center gap-3">
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold font-mono"
               style={{ color: '#F2462E', background: 'rgba(242,70,46,0.08)', border: '1px solid rgba(242,70,46,0.25)' }}>
               <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: '#F2462E' }} />
-              2021 → 2026
+              2021 → 2026  Experience
             </span>
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-4 leading-tight"
             style={{ color: '#1D4A35' }}>
-            Where I've Been<br />
-            <span style={{ color: '#F2462E' }}>Building.</span>
+            Where I've Been  
+            <span style={{ color: '#F2462E' }}>  Building.</span>
           </h2>
-          <p className="text-lg max-w-xl leading-relaxed" style={{ color: 'rgba(29,74,53,0.76)' }}>
+          <p className="mx-auto max-w-xl text-lg leading-relaxed" style={{ color: 'rgba(29,74,53,0.76)' }}>
             A journey from learning the fundamentals to building real-world software.
           </p>
 
           <motion.div initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }}
             viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.3 }}
-            className="w-16 h-0.5 mt-6 rounded-full origin-left"
+            className="mx-auto mt-6 h-0.5 w-16 rounded-full origin-center"
             style={{ background: '#F2462E' }} />
         </motion.div>
 
