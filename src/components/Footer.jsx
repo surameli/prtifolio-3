@@ -2,7 +2,7 @@ import { GithubIcon, LinkedinIcon } from './Icons';
 import { personalInfo } from '../data';
 
 const Footer = () => (
-  <footer   style={{ background: '#11100E', borderTop: '1px solid #34312B' }}>
+  <footer style={{ background: '#EEE5D4', borderTop: '1px solid rgba(29,74,53,0.14)' }}>
     <div className="container-custom">
 
       {/* Main Footer Line */}
@@ -17,7 +17,7 @@ const Footer = () => (
           justify-between
           gap-5
         "
-        style={{ borderColor: '#34312B' }}
+        style={{ borderColor: 'rgba(29,74,53,0.14)' }}
       >
 
         {/* Brand */}
@@ -30,8 +30,8 @@ const Footer = () => (
               font-bold text-sm
             "
             style={{
-              background: '#C47A4A',
-              color: '#11100E',
+              background: '#F2462E',
+              color: '#FFFFFF',
             }}
           >
             S
@@ -40,14 +40,14 @@ const Footer = () => (
           <div>
             <p
               className="font-bold text-sm"
-              style={{ color: '#F1EEE7' }}
+              style={{ color: '#1D4A35' }}
             >
               {personalInfo.name}
             </p>
 
             <p
               className="text-xs"
-              style={{ color: '#716D65' }}
+              style={{ color: 'rgba(29,74,53,0.68)' }}
             >
               {personalInfo.title}
             </p>
@@ -65,14 +65,14 @@ const Footer = () => (
               rounded-lg
               transition-all
               duration-200
-              hover:bg-white/[0.04]
+              hover:bg-[#F8F3E9]
             "
-            style={{ color: '#716D65' }}
+            style={{ color: '#1D4A35' }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.color = '#D89568';
+              e.currentTarget.style.color = '#F2462E';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.color = '#716D65';
+              e.currentTarget.style.color = '#1D4A35';
             }}
             aria-label="GitHub"
           >
@@ -88,14 +88,14 @@ const Footer = () => (
               rounded-lg
               transition-all
               duration-200
-              hover:bg-white/[0.04]
+              hover:bg-[#F8F3E9]
             "
-            style={{ color: '#716D65' }}
+            style={{ color: '#1D4A35' }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.color = '#D89568';
+              e.currentTarget.style.color = '#F2462E';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.color = '#716D65';
+              e.currentTarget.style.color = '#1D4A35';
             }}
             aria-label="LinkedIn"
           >
@@ -123,16 +123,16 @@ const Footer = () => (
             duration-200
           "
           style={{
-            color: '#716D65',
-            border: '1px solid #34312B',
+            color: '#1D4A35',
+            border: '1px solid rgba(29,74,53,0.2)',
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.color = '#D89568';
-            e.currentTarget.style.borderColor = '#C47A4A';
+            e.currentTarget.style.color = '#F2462E';
+            e.currentTarget.style.borderColor = '#F2462E';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.color = '#716D65';
-            e.currentTarget.style.borderColor = '#34312B';
+            e.currentTarget.style.color = '#1D4A35';
+            e.currentTarget.style.borderColor = 'rgba(29,74,53,0.2)';
           }}
         >
           ↑ Back to top
@@ -147,11 +147,11 @@ const Footer = () => (
           text-center
           border-t
         "
-        style={{ borderColor: '#34312B' }}
+        style={{ borderColor: 'rgba(29,74,53,0.14)' }}
       >
         <p
           className="text-xs"
-          style={{ color: '#716D65' }}
+          style={{ color: 'rgba(29,74,53,0.68)' }}
         >
           © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
         </p>
