@@ -33,7 +33,7 @@ import {
 // ─── Project Images ───────────────────────────────────────────────────────────
 import aiRecruitmentImg from '../assets/AI-rectuement-system.png';
 import carRentalImg from '../assets/car-rental.png';
-import portfolioImg from '../assets/recent-portiflio.png';
+import portfolioImg from '../assets/image.png';
 import amazonCloneImg from '../assets/Amazon-clone.png';
 import netflixCloneImg from '../assets/Netflix-clone.png';
 import freshCornerImg from '../assets/fresh-delivery.png'
@@ -152,7 +152,7 @@ export const projects = [
       'Clean dark aesthetic',
     ],
     github: 'https://github.com/surameli/portfolio-2',
-    demo: 'https://surafel-melliyon.vercel.app',
+    demo: 'https://surafel-melliyon-zeta.vercel.app/',
     featured: false,
     color: 'from-violet-500 to-purple-600',
     // icon: '💼',
