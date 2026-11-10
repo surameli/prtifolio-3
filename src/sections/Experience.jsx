@@ -387,6 +387,11 @@ const Experience = () => {
     <section id="experience" className="section-padding relative overflow-hidden"
       style={{ background: '#EEE5D4' }}>
 
+      <div
+        className="absolute top-0 left-1/2 h-24 w-px -translate-x-1/2"
+        style={{ background: 'linear-gradient(to bottom, transparent, rgba(242,70,46,0.35))' }}
+      />
+
       {/* Very subtle warm bg glow */}
       <div className="absolute top-1/4 right-0 w-96 h-96 rounded-full pointer-events-none"
         style={{ background: 'rgba(242,70,46,0.06)', filter: 'blur(100px)' }} />
@@ -401,7 +406,7 @@ const Experience = () => {
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold font-mono"
               style={{ color: '#F2462E', background: 'rgba(242,70,46,0.08)', border: '1px solid rgba(242,70,46,0.25)' }}>
               <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: '#F2462E' }} />
-              2021 → 2026  Experience
+              Experience · 2021 → 2026
             </span>
           </div>
 

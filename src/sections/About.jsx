@@ -48,11 +48,11 @@ const About = () => (
               <div className="flex items-start gap-5 mb-8">
                 <div className="relative">
                   <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl font-black"
-                    style={{ background: '#F2462E', color: '#FFFFFF', boxShadow: '0 8px 24px rgba(242,70,46,0.2)' }}>S</div>
-                  <div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full border-2 flex items-center justify-center"
+                    style={{ background: '#F2462E', color: '#EEE5D4', boxShadow: '0 8px 24px rgba(242,70,46,0.2)' }}>S</div>
+                  {/* <div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full border-2 flex items-center justify-center"
                     style={{ background: '#1D4A35', borderColor: '#F8F3E9' }}>
                     <div className="w-2 h-2 rounded-full animate-pulse" style={{ background: '#EEE5D4' }} />
-                  </div>
+                  </div> */}
                 </div>
                 <div>
                   <h3 className="text-xl font-bold" style={{ color: '#1D4A35' }}>{personalInfo.name}</h3>
