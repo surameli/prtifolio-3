@@ -91,7 +91,7 @@ const techStack = {
     {
       name: 'Express.js',
       icon: SiExpress,
-      color: '#F1EEE7',
+      color: '#1D4A35',
       desc: 'Web framework',
     },
     {
@@ -133,7 +133,7 @@ const techStack = {
     {
       name: 'GitHub',
       icon: SiGithub,
-      color: '#F1EEE7',
+      color: '#1D4A35',
       desc: 'Code hosting & collaboration',
     },
     {
@@ -174,33 +174,33 @@ const techStack = {
 
 const categoryColors = {
   Frontend: {
-    color: '#C47A4A',
-    bg: 'rgba(196, 122, 74, 0.08)',
-    border: 'rgba(196, 122, 74, 0.25)',
+    color: '#F2462E',
+    bg: 'rgba(242, 70, 46, 0.08)',
+    border: 'rgba(242, 70, 46, 0.25)',
   },
 
   Backend: {
-    color: '#6F8F72',
-    bg: 'rgba(111, 143, 114, 0.08)',
-    border: 'rgba(111, 143, 114, 0.25)',
+    color: '#1D4A35',
+    bg: 'rgba(29, 74, 53, 0.08)',
+    border: 'rgba(29, 74, 53, 0.2)',
   },
 
   Database: {
-    color: '#A8A39A',
-    bg: 'rgba(168, 163, 154, 0.08)',
-    border: 'rgba(168, 163, 154, 0.2)',
+    color: '#F2462E',
+    bg: 'rgba(242, 70, 46, 0.06)',
+    border: 'rgba(242, 70, 46, 0.18)',
   },
 
   Tools: {
-    color: '#D89568',
-    bg: 'rgba(216, 149, 104, 0.08)',
-    border: 'rgba(216, 149, 104, 0.2)',
+    color: '#1D4A35',
+    bg: 'rgba(29, 74, 53, 0.08)',
+    border: 'rgba(29, 74, 53, 0.2)',
   },
 
   Exploring: {
-    color: '#C47A4A',
-    bg: 'rgba(196, 122, 74, 0.08)',
-    border: 'rgba(196, 122, 74, 0.25)',
+    color: '#F2462E',
+    bg: 'rgba(242, 70, 46, 0.08)',
+    border: 'rgba(242, 70, 46, 0.25)',
   },
 };
 
@@ -209,14 +209,20 @@ const TechStack = () => {
     <section
       id="stack"
       className="section-padding relative"
-      style={{ background: '#191816' }}
+      style={{ background: '#EEE5D4' }}
     >
+      <div
+        className="absolute top-0 left-1/2 h-24 w-px -translate-x-1/2"
+        style={{ background: 'linear-gradient(to bottom, transparent, rgba(242,70,46,0.35))' }}
+      />
       <div className="container-custom relative">
 
         <SectionHeader
           eyebrow="Tech Stack"
-          title="What I work with"
+          title={<>What I <span style={{ color: '#F2462E' }}>work</span> with</>}
           subtitle="Technologies I use to turn ideas into working software."
+          tone="light"
+          titleClassName="text-5xl font-black"
         />
 
         <div className="space-y-10">
@@ -257,7 +263,7 @@ const TechStack = () => {
                     <div
                       className="flex-1 h-px"
                       style={{
-                        background: '#34312B',
+                        background: 'rgba(29,74,53,0.18)',
                       }}
                     />
 

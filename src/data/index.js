@@ -33,7 +33,7 @@ import {
 // ─── Project Images ───────────────────────────────────────────────────────────
 import aiRecruitmentImg from '../assets/AI-rectuement-system.png';
 import carRentalImg from '../assets/car-rental.png';
-import portfolioImg from '../assets/recent-portiflio.png';
+import portfolioImg from '../assets/image.png';
 import amazonCloneImg from '../assets/Amazon-clone.png';
 import netflixCloneImg from '../assets/Netflix-clone.png';
 import freshCornerImg from '../assets/fresh-delivery.png'
@@ -77,7 +77,7 @@ export const projects = [
   demo: 'https://fresh-corner-delivery.vercel.app/',
   featured: true,
   color: 'from-green-500 to-emerald-600',
-  icon: '🛵',
+  // icon: '🛵',
   imageUrl: freshCornerImg,
 },
   
@@ -109,7 +109,7 @@ export const projects = [
     demo: 'https://ethiopian-airlines-hr-system.vercel.app/',
     featured: true,
     color: 'from-indigo-500 to-purple-600',
-    icon: '🤖',
+    // icon: '🤖',
     imageUrl: aiRecruitmentImg,
   },
   {
@@ -132,7 +132,7 @@ export const projects = [
     demo: 'https://car-rental-xod2.vercel.app/',
     featured: false,
     color: 'from-cyan-500 to-blue-600',
-    icon: '🚗',
+    // icon: '🚗',
     imageUrl: carRentalImg,
   },
   {
@@ -152,10 +152,10 @@ export const projects = [
       'Clean dark aesthetic',
     ],
     github: 'https://github.com/surameli/portfolio-2',
-    demo: 'https://surafel-melliyon.vercel.app',
+    demo: 'https://surafel-melliyon-zeta.vercel.app/',
     featured: false,
     color: 'from-violet-500 to-purple-600',
-    icon: '💼',
+    // icon: '💼',
     imageUrl: portfolioImg,
   },
   {
@@ -179,7 +179,7 @@ export const projects = [
     demo: 'https://sura-amazon-clone.netlify.app/',
     featured: false,
     color: 'from-orange-500 to-amber-600',
-    icon: '🛒',
+    // icon: '🛒',
     imageUrl: amazonCloneImg,
   },
   {

@@ -38,15 +38,15 @@ const TechBadge = ({ tech, index }) => {
       "
       style={{
         background: isHovered
-          ? '#28251F'
-          : '#211F1B',
+          ? '#FFFFFF'
+          : '#F8F3E9',
 
         borderColor: isHovered
-          ? tech.color
-          : '#34312B',
+          ? '#F2462E'
+          : 'rgba(29,74,53,0.14)',
 
         boxShadow: isHovered
-          ? `0 8px 25px ${tech.color}15`
+          ? '0 8px 25px rgba(242,70,46,0.12)'
           : 'none',
       }}
     >
@@ -76,7 +76,7 @@ const TechBadge = ({ tech, index }) => {
               style={{
                 color: isHovered
                   ? tech.color
-                  : '#716D65',
+                  : '#1D4A35',
 
                 transition:
                   'color 0.3s ease',
@@ -95,8 +95,8 @@ const TechBadge = ({ tech, index }) => {
           "
           style={{
             color: isHovered
-              ? '#F1EEE7'
-              : '#A8A39A',
+              ? '#F2462E'
+              : '#1D4A35',
           }}
         >
           {tech.name}
@@ -110,13 +110,13 @@ const TechBadge = ({ tech, index }) => {
 
            pointer-events-none whitespace-nowrap shadow-xl z-10"
 
-      style={{ background: '#28251F', border: '1px solid #34312B', color: '#A8A39A' }}>
+      style={{ background: '#1D4A35', border: '1px solid rgba(29,74,53,0.2)', color: '#FFFFFF' }}>
 
  {tech.desc}
 
  <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent"
 
- style={{ borderTopColor: '#28251F' }} />
+ style={{ borderTopColor: '#1D4A35' }} />
 
 </div>
 )}
