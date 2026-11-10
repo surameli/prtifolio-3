@@ -68,6 +68,10 @@ const Projects = () => {
 
   return (
     <section id="projects" className="section-padding relative" style={{ background: '#EEE5D4' }}>
+      <div
+        className="absolute top-0 left-1/2 h-24 w-px -translate-x-1/2"
+        style={{ background: 'linear-gradient(to bottom, transparent, rgba(242,70,46,0.35))' }}
+      />
       <div className="container-custom relative ">
         <SectionHeader eyebrow="Featured Projects" title={<>Things I have <span style={{ color: '#F2462E' }}>built</span></>} subtitle="Real projects built with real purpose — not tutorials, not demos." tone="light" titleClassName="text-5xl font-black" />
           
