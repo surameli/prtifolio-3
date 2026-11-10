@@ -39,10 +39,10 @@ const Navbar = () => {
         style={
           scrolled
             ? {
-                background: '#0F1B3D',
+                background: '#EEE5D4',
                 backdropFilter: 'blur(14px)',
-                borderBottom: '1px solid rgba(255,255,255,0.12)',
-                boxShadow: '0 8px 32px rgba(0,0,0,0.25)',
+                borderBottom: '1px solid rgba(29,74,53,0.12)',
+                boxShadow: '0 8px 32px rgba(29,74,53,0.12)',
               }
             : { background: 'transparent' }
         }
@@ -58,18 +58,18 @@ const Navbar = () => {
               <div
                 className="w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm transition-all duration-300"
                 style={{
-                  background: '#FFFFFF',
-                  color: '#000',
+                  background: '#F2462E',
+                  color: '#FFFFFF',
                 }}
               >
                 S
               </div>
 
               <span
-                className="font-bold text-sm tracking-wide hidden sm:block"
-                style={{ color: '#FFFFFF' }}
+                className="font-bold text-lg tracking-wide hidden sm:block"
+                style={{ color: '#1D4A35' }}
               >
-                Surafel<span style={{ color: '#FFFFF' }}>.</span>
+                Surafel<span style={{ color: '#1D4A35' }}>.</span>
               </span>
             </button>
 
@@ -83,19 +83,19 @@ const Navbar = () => {
                   style={
                     active === link.href
                       ? {
-                          color: '#FF3D8B',
-                          background: 'rgba(255,61,139,0.10)',
+                          color: '#F2462E',
+                          background: 'rgba(242,70,46,0.10)',
                         }
-                      : { color: 'rgba(255,255,255,0.70)' }
+                      : { color: '#1D4A35' }
                   }
                   onMouseEnter={(e) => {
                     if (active !== link.href) {
-                      e.currentTarget.style.color = '#FFFFFF';
+                      e.currentTarget.style.color = '#F2462E';
                     }
                   }}
                   onMouseLeave={(e) => {
                     if (active !== link.href) {
-                      e.currentTarget.style.color = 'rgba(255,255,255,0.70)';
+                      e.currentTarget.style.color = '#1D4A35';
                     }
                   }}
                 >
@@ -111,17 +111,17 @@ const Navbar = () => {
                 download="Surafel_Melliyon_CV.pdf"
                 className="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300"
                 style={{
-                  color: '#000',
-                  border: '1px solid #FFFFFF',
-                  background: '#FFFFFF',
+                  color: '#FFFFFF',
+                  border: '1px solid #F2462E',
+                  background: '#F2462E',
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#FFFFFF';
-                  e.currentTarget.style.borderColor = '#FFFFFF';
+                  e.currentTarget.style.background = '#F2462E';
+                  e.currentTarget.style.borderColor = '#F2462E';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#FFFFFF';
-                  e.currentTarget.style.borderColor = '#FFFFFF';
+                  e.currentTarget.style.background = '#F2462E';
+                  e.currentTarget.style.borderColor = '#F2462E';
                 }}
               >
                 Download CV
@@ -132,7 +132,7 @@ const Navbar = () => {
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden p-2 rounded-lg transition-all"
-              style={{ color: '#FFFFFF' }}
+              style={{ color: '#1D4A35' }}
               aria-label="Toggle menu"
             >
               {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -151,8 +151,8 @@ const Navbar = () => {
             transition={{ duration: 0.25 }}
             className="fixed top-16 left-0 right-0 z-40 p-4 md:hidden"
             style={{
-              background: '#FFFFFF',
-              borderBottom: '1px solid #FFFFFF',
+              background: '#EEE5D4',
+              borderBottom: '1px solid rgba(29,74,53,0.12)',
               backdropFilter: 'blur(14px)',
             }}
           >
@@ -163,10 +163,10 @@ const Navbar = () => {
                   onClick={() => handleNav(link.href)}
                   className="text-left px-4 py-3 rounded-lg text-sm font-medium transition-all"
                   style={{
-                    color: active === link.href ? '#FFFFFF' : '#FFFFFF',
+                    color: active === link.href ? '#F2462E' : '#1D4A35',
                     background:
                       active === link.href
-                        ? '#FFFFFF'
+                        ? 'rgba(242,70,46,0.10)'
                         : 'transparent',
                   }}
                 >
@@ -180,7 +180,8 @@ const Navbar = () => {
                 className="mt-2 px-4 py-3 text-sm font-medium text-center rounded-lg transition-all"
                 style={{
                   color: '#FFFFFF',
-                  border: '1px solid #FFFFFF',
+                  border: '1px solid #F2462E',
+                  background: '#F2462E',
                 }}
               >
                 Download CV

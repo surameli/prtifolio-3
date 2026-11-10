@@ -3,7 +3,8 @@
 @layer base {
   :root {
     /* --bg:           #11100E; */
-    --bg:           #0F1B3D;
+    /* --bg:           #0F1B3D; */
+    --bg:           #EEE5D4;
     --bg-secondary: #191816;
     --card:         #211F1B;
     --card-elevated:#28251F;

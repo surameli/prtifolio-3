@@ -27,7 +27,7 @@ const Hero = () => {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 pt-20"
       style={{
-        background: '#0F1B3D',
+        background: '#EEE5D4',
       }}
     >
       {/* Background Glow */}
@@ -88,7 +88,7 @@ const Hero = () => {
             <span
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight"
               style={{
-                color: '#FFFFFF',
+                color: '#1D4A35',
                 textShadow: '0 10px 40px rgba(0,0,0,0.35)',
               }}
             >
@@ -98,8 +98,8 @@ const Hero = () => {
             <span
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight"
               style={{
-                // background: '#FFFFFF',
-               textShadow: '0 10px 40px rgba(0,0,0,0.35)',
+                color: '#F2462E',
+                textShadow: '0 10px 40px rgba(0,0,0,0.15)',
               }}
             >
               MELLIYON
@@ -122,10 +122,10 @@ const Hero = () => {
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.35 }}
                   className="text-xl sm:text-2xl md:text-3xl font-semibold"
-                  style={{ color: '#FFFFFF' }}
+                  style={{ color: '#1D4A35' }}
                 >
                   {roles[roleIndex]}
-                  <span style={{ color: '#FF3D8B' }}>.</span>
+                  <span style={{ color: '#F2462E' }}>.</span>
                 </motion.span>
               </AnimatePresence>
             </div>
@@ -133,8 +133,8 @@ const Hero = () => {
             <div
               className="mt-3 h-[2px] w-12 rounded-full"
               style={{
-                background: 'linear-gradient(90deg, transparent, #FF3D8B, transparent)',
-                boxShadow: '0 0 15px rgba(255,61,139,0.45)',
+                background: 'linear-gradient(90deg, transparent, #F2462E, transparent)',
+                boxShadow: '0 0 15px rgba(242,70,46,0.35)',
               }}
             />
           </motion.div>
@@ -145,7 +145,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             className="max-w-2xl mt-7 text-base md:text-lg leading-relaxed"
-            style={{ color: 'rgba(255,255,255,0.78)' }}
+            style={{ color: '#1D4A35' }}
           >
             I build modern web applications, backend systems,
             and automation tools with a focus on clean
@@ -169,21 +169,21 @@ const Hero = () => {
               }
               className="px-8 py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 active:scale-95"
               style={{
-                background: '#FF3D8B',
+                background: '#F2462E',
                 color: '#FFFFFF',
-                boxShadow: '0 10px 30px rgba(255,61,139,0.22)',
+                boxShadow: '0 10px 30px rgba(242,70,46,0.22)',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#E82D78';
+                e.currentTarget.style.background = '#F2462E';
                 e.currentTarget.style.transform = 'translateY(-2px)';
                 e.currentTarget.style.boxShadow =
-                  '0 14px 35px rgba(255,61,139,0.35)';
+                  '0 14px 35px rgba(242,70,46,0.35)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#FF3D8B';
+                e.currentTarget.style.background = '#F2462E';
                 e.currentTarget.style.transform = 'translateY(0)';
                 e.currentTarget.style.boxShadow =
-                  '0 10px 30px rgba(255,61,139,0.22)';
+                  '0 10px 30px rgba(242,70,46,0.22)';
               }}
             >
               View My Work
@@ -198,18 +198,18 @@ const Hero = () => {
               }
               className="px-8 py-3.5 rounded-xl font-semibold text-sm transition-all duration-300"
               style={{
-                background: 'rgba(255,255,255,0.04)',
-                border: '1px solid #FF3D8B',
+                background: '#F2462E',
+                border: '1px solid #F2462E',
                 color: '#FFFFFF',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(255,61,139,0.12)';
-                e.currentTarget.style.borderColor = '#FF3D8B';
+                e.currentTarget.style.background = '#F2462E';
+                e.currentTarget.style.borderColor = '#F2462E';
                 e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgba(255,255,255,0.04)';
-                e.currentTarget.style.borderColor = '#FF3D8B';
+                e.currentTarget.style.background = '#F2462E';
+                e.currentTarget.style.borderColor = '#F2462E';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
@@ -221,12 +221,12 @@ const Hero = () => {
               href={personalInfo.cvLink}
               download="Surafel_Melliyon_CV.pdf"
               className="px-8 py-3.5 rounded-xl font-medium text-sm transition-all duration-300"
-              style={{ color: 'rgba(255,255,255,0.65)' }}
+              style={{ color: '#1D4A35' }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.color = '#FF3D8B';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.color = 'rgba(255,255,255,0.65)';
+                e.currentTarget.style.color = '#1D4A35';
               }}
             >
               ↓ Download CV
@@ -245,31 +245,31 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm transition-colors duration-200"
-              style={{ color: 'rgba(255,255,255,0.65)' }}
+              style={{ color: '#1D4A35' }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.color = '#FF3D8B';
+                e.currentTarget.style.color = '#F2462E';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.color = 'rgba(255,255,255,0.65)';
+                e.currentTarget.style.color = '#1D4A35';
               }}
             >
               <GithubIcon size={16} />
               GitHub
             </a>
 
-            <span style={{ color: 'rgba(255,255,255,0.35)' }}>·</span>
+            <span style={{ color: '#1D4A35' }}>·</span>
 
             <a
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm transition-colors duration-200"
-              style={{ color: 'rgba(255,255,255,0.65)' }}
+              style={{ color: '#1D4A35' }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.color = '#FF3D8B';
+                e.currentTarget.style.color = '#F2462E';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.color = 'rgba(255,255,255,0.65)';
+                e.currentTarget.style.color = '#1D4A35';
               }}
             >
               <LinkedinIcon size={16} />
@@ -290,12 +290,12 @@ const Hero = () => {
           })
         }
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
-        style={{ color: 'rgba(255,255,255,0.55)' }}
+        style={{ color: '#1D4A35' }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.color = '#FF3D8B';
+          e.currentTarget.style.color = '#F2462E';
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.color = 'rgba(255,255,255,0.55)';
+          e.currentTarget.style.color = '#1D4A35';
         }}
         aria-label="Scroll down"
       >
