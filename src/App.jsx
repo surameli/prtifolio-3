@@ -8,7 +8,7 @@ import TechStack from './sections/TechStack';
 import Stats from './sections/Stats';
 import Exploring from './sections/Exploring';
 import Process from './sections/Process';
-import GitHubSection from './sections/GitHub';
+// import GitHubSection from './sections/GitHub';
 import Contact from './sections/Contact';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <TechStack />
         <Process />
         <Exploring />
-        <GitHubSection />
+        {/* <GitHubSection /> */}
         <Contact />
       </main>
       <Footer />
