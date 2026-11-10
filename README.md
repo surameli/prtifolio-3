@@ -1,16 +1,43 @@
-# React + Vite
+## Surafel Melliyon | Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal developer portfolio showcasing my projects, technical skills, experience, and journey in software development.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About Me
 
-## React Compiler
+Hi, I'm **Surafel Melliyon**, a developer from Addis Ababa, Ethiopia, with a background in Computer Science.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I enjoy building modern, responsive, and user-friendly web applications. My main focus is frontend development with React, while also exploring backend development, AI-powered applications, and automation.
 
-## Expanding the ESLint configuration
+I believe in continuous learning, practical problem-solving, and building technology that makes a difference.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript, React.js
+- **Styling:** Tailwind CSS
+- **Build Tool:** Vite
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Tools:** Git, GitHub, VS Code
+
+## Portfolio Sections
+
+- **Home:** Introduction and professional overview.
+- **About:** Background, interests, and development journey.
+- **Projects:** Selected personal, academic, and professional projects.
+- **Tech Stack:** Technologies and tools I work with.
+- **Experience:** My professional and learning experience.
+- **Contact:** Ways to connect with me.
+
+
+## Current Focus
+
+- Building modern React applications.
+- Improving frontend development skills.
+- Exploring Python and Artificial Intelligence.
+- Developing practical AI-powered projects.
+
+
+**Designed and Developed by Surafel Melliyon**
+
+*Building · Learning · Exploring AI*
