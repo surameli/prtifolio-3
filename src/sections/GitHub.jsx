@@ -26,6 +26,19 @@ const GitHubSection = () => (
             <GithubIcon size={36} />
           </motion.div>
 
+          <div className="mb-4">
+            <span
+              className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-widest uppercase"
+              style={{
+                color: '#F2462E',
+                border: '1px solid rgba(242,70,46,0.3)',
+                background: 'rgba(242,70,46,0.07)',
+              }}
+            >
+              Open Source
+            </span>
+          </div>
+
           <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1D4A35' }}>
             Building in Public
           </h2>

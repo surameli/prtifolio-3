@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { MapPin, Calendar, ChevronUp, ArrowRight } from 'lucide-react';
+import SectionHeader from '../components/SectionHeader';
 
 // ─── Status config ──────────────────────────────────────────────────────────────
 const STATUS = {
@@ -390,8 +391,8 @@ const Experience = () => {
       <div className="absolute top-1/4 right-0 w-96 h-96 rounded-full pointer-events-none"
         style={{ background: 'rgba(242,70,46,0.06)', filter: 'blur(100px)' }} />
 
-      <div className="container-custom relative">
-
+      <div className="container-custom  relative">
+      
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.7 }} className="mb-14 text-center">

@@ -17,7 +17,7 @@ const About = () => (
       style={{ background: 'linear-gradient(to bottom, transparent, rgba(242,70,46,0.35))' }} />
 
     <div className="container-custom">
-      <SectionHeader eyebrow="About Me" title="Building with curiosity." subtitle="Creating with purpose." tone="light" />
+      <SectionHeader eyebrow="About Me"  title={<>Building with <span style={{ color: '#F2462E' }}>curiosity.</span></>} subtitle="Creating with purpose." tone="light" />
 
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
